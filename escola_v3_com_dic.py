@@ -7,17 +7,18 @@ cada uma das atividades.
 """
 
 __version__ = "0.0.1"
+__author__ = "Vinicius Freire"
 
 # Dados
 salas = {
-    "1":["Erik", "Maia", "Gustavo", "Manuel", "Sofia", "Joana"],
-    "2":["Joao", "Antonio", "Carlos", "Maria", "Isolda"]
+    "1": ["Erik", "Maia", "Gustavo", "Manuel", "Sofia", "Joana"],
+    "2": ["Joao", "Antonio", "Carlos", "Maria", "Isolda"]
 }
 
 aulas = {
-    "Ingles":["Erik", "Maia", "Joana", "Carlos", "Antonio"],
-    "Musica":["Erik", "Carlos", "Maria"],
-    "Dança":["Gustavo", "Sofia", "Joana", "Antonio"]
+    "Ingles": ["Erik", "Maia", "Joana", "Carlos", "Antonio"],
+    "Musica": ["Erik", "Carlos", "Maria"],
+    "Dança": ["Gustavo", "Sofia", "Joana", "Antonio"]
 }
 
 for key in aulas.keys():
