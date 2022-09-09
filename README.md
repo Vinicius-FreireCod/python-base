@@ -6,3 +6,11 @@
 # Python Base
 
 It's my repository to show my python studies
+
+
+ <img 
+      height="130em" 
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vinicius-FreireCod&layout=compact&langs_count=7&theme=dark"/>
+
+
+![Count Visit](https://komarev.com/ghpvc/?username=Vinicius-FreireCod)
