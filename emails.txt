@@ -1,0 +1,3 @@
+Bruno,rochabruno@gmail.com
+Rafa,rochrafa@gmail.com
+Vinicius,vinizeira@gmail.com
