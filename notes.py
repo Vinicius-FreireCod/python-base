@@ -61,6 +61,6 @@ while True:
         # \t - tsv
         with open(filepath, 'a') as file_:
             file_.write('\t'.join(text) + '\n')
-    input(f'Quer continuar {arguments[0]} notas? [N/y]').strip().lower()
-    if input != 'y':
+    cont = input(f'Quer continuar {arguments[0]} notas? [N/y]').strip().lower()
+    if cont != 'y':
         break
