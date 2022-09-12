@@ -30,26 +30,37 @@ if not arguments:
 if arguments[0] not in cmds:
     print(f'Invalid command {arguments[0]}')
 
-if arguments[0] == 'read':
-    # leitura das notas
-    for line in open(filepath):
-        title, tag, text = line.split('\t')
-        if tag == arguments[1].lower():
-            print(f'titulo: {title}')
-            print(f'text: {text}')
-            print('-' * 30)
-            print()
+while True:
 
+    if arguments[0] == 'read':
+        try:
+            arg_tag = arguments[1].lower()
+        except IndexError:
+            arg_tag = input('Qual a tag:').strip().lower()
+        # leitura das notas
+        for line in open(filepath):
+            title, tag, text = line.split('\t')
+            if tag == arg_tag:
+                print(f'titulo: {title}')
+                print(f'text: {text}')
+                print('-' * 30)
+                print()
 
-if arguments[0] == 'new':
-    # escrever nota
-    title = arguments[1]
-    text = [
-        f'{title}',
-        input('tag:').strip(),
-        input('text:').strip(),
+    if arguments[0] == 'new':
+        # escrever nota
+        try:
+            title = arguments[1]
+        except IndexError:
+            title = input("Qual é o titulo").strip().title()
+        text = [
+            f'{title}',
+            input('tag:').strip(),
+            input('text:').strip(),
 
-    ]
-    # \t - tsv
-    with open(filepath, 'a') as file_:
-        file_.write('\t'.join(text) + '\n')
+        ]
+        # \t - tsv
+        with open(filepath, 'a') as file_:
+            file_.write('\t'.join(text) + '\n')
+    input(f'Quer continuar {arguments[0]} notas? [N/y]').strip().lower()
+    if input != 'y':
+        break

@@ -1,2 +1,3 @@
 minha primeira nota	geral	primeira nota
 minha segunda nota	tech	minha nota 2
+Repeticoes	Python	While é demais
